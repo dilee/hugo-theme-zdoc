@@ -1,0 +1,50 @@
+<div class="grid">
+    <div class="grid__cell">
+        <h3>Message Routing</h3>
+        {{range $.Site.Data.content.EI.messageRouting}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>Message Transformation</h3>
+        {{range $.Site.Data.content.EI.messageTransformation}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>Asynchronous Messaging</h3>
+        {{range $.Site.Data.content.EI.asynchronousMessaging}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>File Processing</h3>
+        {{range $.Site.Data.content.EI.fileProcessing}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>Data Integration</h3>
+        {{range $.Site.Data.content.EI.dataIntegration}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>Proxying</h3>
+        {{range $.Site.Data.content.EI.proxying}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>SaaS Integration</h3>
+        {{range $.Site.Data.content.EI.saas}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+    <div class="grid__cell">
+        <h3>Testing</h3>
+        {{range $.Site.Data.content.EI.testing}} {{range $key, $value := .}}
+        <div><a href="{{ $value }}">{{ $key }}</a></div>
+        {{end}} {{end}}
+    </div>
+</div>

@@ -8,6 +8,8 @@
 {{ end }}
 {{ end }}
 
+{{ $customscript := resources.Get "js/custom-script.js" | resources.Minify | resources.Fingerprint }}
+<script defer src="{{ $customscript.RelPermalink }}"></script>
 {{ $enquire := resources.Get "js/enquire.min.js" | resources.Fingerprint }}
 <script src="{{ $enquire.RelPermalink }}"></script>
 {{ $fuse := resources.Get "js/fuse.min.js" | resources.Fingerprint }}
@@ -961,5 +963,6 @@
       }) : null;
     }) : null;
   // ============================================================
+
   }
 </script>

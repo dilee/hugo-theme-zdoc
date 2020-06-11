@@ -9,6 +9,7 @@
   {{ end }}
 
   <article class="single__contents" data-dir="{{ $.Param "languagedir" | default "ltr" }}">
+    <h3 class="title" style="align-self: center;">{{ .Title }}</h3>
     {{ .Content }}
   </article>
 </div>
